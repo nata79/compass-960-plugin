@@ -39,7 +39,7 @@ $ninesixty-class-separator: "_" !default
       +grid-width($n, $cols, $gutter-width)
 
 =grid-prefix($n, $cols: $ninesixty-columns)
-  padding-left: $ninesixty-grid-width / $cols * $n
+  margin-left: $ninesixty-grid-width / $cols * $n
 
 =grid-prefixes($cols: $ninesixty-columns)
   @for $n from 1 through $cols - 1
@@ -47,7 +47,7 @@ $ninesixty-class-separator: "_" !default
       +grid-prefix($n, $cols)
 
 =grid-suffix($n, $cols: $ninesixty-columns)
-  padding-right: $ninesixty-grid-width / $cols * $n
+  margin-right: $ninesixty-grid-width / $cols * $n
 
 =grid-suffixes($cols: $ninesixty-columns)
   @for $n from 1 through $cols - 1
